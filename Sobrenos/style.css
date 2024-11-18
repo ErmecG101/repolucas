@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00bfff;
+    color: #333;
+    line-height: 1.6;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+header {
+    background: url('agro-background.jpg') no-repeat center center/cover;
+    color: white;
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+header p {
+    font-size: 1.2em;
+}
+.content {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+h2 {
+    color: #28a745;
+    font-size: 2.2em;
+    text-align: center;
+}
+p {
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+.values {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.values div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

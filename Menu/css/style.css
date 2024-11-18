@@ -1,0 +1,146 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../imagens/Logo.png');
+    background-size: 70%; /* Ajusta o tamanho da imagem de fundo */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+header, main, footer {
+    position: relative; /* Mantém o conteúdo acima da imagem de fundo */
+    z-index: 1;
+}
+
+header {
+    background-color: rgba(0, 123, 255, 0.8);
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    z-index: 100; /* Garante que o header e o menu fiquem acima do conteúdo principal */
+    position: relative;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    z-index: 1; /* Mantém o conteúdo da main abaixo do header e dropdown */
+}
+
+footer {
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Estilo do menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 101; /* Menu sobrepõe o conteúdo principal */
+}
+
+.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 16px;
+}
+
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 200; /* Garante que o dropdown fique acima do conteúdo */
+    top: 100%; /* Posiciona o dropdown logo abaixo do botão */
+}
+
+.menu .dropdown-content a {
+    color: #006400;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.menu .dropdown-content a:hover {
+    background-color: #f4f4f4;
+}
+
+.menu .dropdown:hover .dropdown-content {
+    display: block; /* Mostra o conteúdo do dropdown quando o mouse está sobre o item */
+}
+
+.menu a:hover {
+    background-color: #0056b3;
+}
+
+/* Container de conteúdo */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilo dos botões principais */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
